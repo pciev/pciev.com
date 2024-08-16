@@ -10,8 +10,7 @@ var motr = [
 ]
 
 random()
-var min = getMinutes();
-forzathonCheck(min)
+forzathonCheck()
 
 // Default function
 function random() {
@@ -20,9 +19,12 @@ function random() {
 }
 
 // #FORZATHON LIVE timer to run at 5 minutes before the next hour
-function forzathonCheck(min) {
-    if (min >= 55) {
-        document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in" + " " + ". Get there now to take part!";
+function forzathonCheck() {
+    var now = new Date();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    if (min < 55) {
+        document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (60 - min - 1) + ":" + (60 - sec) + ". Get there now to take part!";
     }
 }
 
