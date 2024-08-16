@@ -10,7 +10,7 @@ var motr = [
 ]
 
 random()
-forzathonCheck()
+setInterval(forzathonCheck, 1000);
 
 // Default function
 function random() {
@@ -24,9 +24,7 @@ function forzathonCheck() {
     var min = now.getMinutes();
     var sec = now.getSeconds();
     if (min >= 55) {
-        setInterval(function() {
-            document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (60 - min - 1) + ":" + (60 - sec) + ". Get there now to take part!";
-        }, 1000);
+      document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (60 - min - 1) + ":" + (60 - sec) + ". Get there now to take part!";
     }
 }
 
