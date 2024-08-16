@@ -9,12 +9,12 @@ var motr = [
     "Squeak! -Elh Cylinder",
 ]
 
-motr()
+random()
 var min = getMinutes();
 forzathonCheck(min)
 
 // Default function
-function motr() {
+function random() {
     var choice = Math.floor(Math.random() * motr.length);
     document.getElementById("motr").innerHTML = motr[choice];
 }
