@@ -9,6 +9,7 @@ var motr = [
     "Squeak! -Elh Cylinder",
 ]
 
+motr()
 var min = getMinutes();
 forzathonCheck(min)
 
