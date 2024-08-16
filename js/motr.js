@@ -6,5 +6,5 @@ var motr = [
     "come to my stable -@rllyhungryhorse",
     "I'm going to Pranks you! -Jongulo Pranks"
 ]
-var choice = Math.floor(Math.random() * textArray.length);
-document.getElementById("motr").innerHTML = textArray[choice];
+var choice = Math.floor(Math.random() * motr.length);
+document.getElementById("motr").innerHTML = motr[choice];
