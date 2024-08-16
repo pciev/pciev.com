@@ -10,10 +10,7 @@ var motr = [
 ]
 
 random()
-var minut = setInterval(getMinutes, 1000);
-if (minut >= 55) {
-    setInterval(forzathonCheck, 1000);
-}
+setInterval(forzathonCheck, 1000);
 
 // Default function
 function random() {
@@ -26,7 +23,9 @@ function forzathonCheck() {
     var now = new Date();
     var min = now.getMinutes();
     var sec = now.getSeconds();
-    document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (60 - min - 1) + ":" + (60 - sec) + ". Get there now to take part!";
+    if (min >= 55) {
+        document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (60 - min - 1) + ":" + (60 - sec) + ". Get there now to take part!";
+    }
 }
 
 // Grab the current minute on page refresh
