@@ -28,7 +28,7 @@ function forzathonCheck() {
     var min = now.getMinutes();
     var sec = now.getSeconds();
     if (min >= 55) {
-        document.getElementById("motr").innerHTML = "#FORZATHON LIVE - Event begins in 0" + (59 - min) + ":" + (59 - sec) + ". Get there now to take part!";
+        document.getElementById("motr").innerHTML = "#FORZATHON LIVE\n Event begins in 0" + (59 - min) + ":" + (59 - sec) + ". Get there now to take part!";
     }
 }
 
