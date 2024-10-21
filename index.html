@@ -2,5 +2,23 @@
     <head>
         <title>pciev.com</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/img/assets/favicons/chess.png">
     </head>
+    <body>
+        <main>
+            <div id="taskbar">
+                <button id="startButton">Start</button>
+                <div id="startMenu" class="hidden">
+                    <ul>
+                        <li><a href="#" class="menuItem" data-url="/files/index.html">Files</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="windowScreen" class="hidden">
+                <div id="windowContent"></div>
+                <button id="closeButton">X</button>
+            </div>
+        </main>
+        <script src="/js/index.js"></script>
+    </body>
 </html>
