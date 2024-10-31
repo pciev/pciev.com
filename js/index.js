@@ -86,6 +86,13 @@ function createWindowIFrame(url) {
     windowHeader.classList.add('windowHeader');
     windowHeader.innerHTML = 'Window Header';
 
+    var newTab = document.createElement('button');
+    newTab.classList.add('newTab');
+    newTab.innerHTML = 'Open in Tab';
+    newTab.addEventListener('click', function() {
+        window.open(url, '_blank');
+    });
+
     var iframe = document.createElement('iframe');
     iframe.src = url;
     iframe.style.width = '100%';
@@ -104,9 +111,11 @@ function createWindowIFrame(url) {
         document.body.removeChild(windowScreen);
     });
 
+    
     windowScreen.appendChild(windowHeader);
     windowScreen.appendChild(windowContent);
     windowScreen.appendChild(closeButton);
+    windowScreen.appendChild(newTab);
     document.body.appendChild(windowScreen);
 
     dragWindow(windowScreen, windowHeader);

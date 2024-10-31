@@ -114,6 +114,18 @@ html {
     right: 0px;
 }
 
+.newTab {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
 @media (max-width: 600px) {
     #startMenu {
         width: 100%;
