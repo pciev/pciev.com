@@ -7,6 +7,10 @@ var motr = [
     "I'm going to Pranks you! -Jongulo Pranks",
     "Squeak! -Red Cylinder",
     "Squeak! -Elh Cylinder",
+    "Marge, I'm funny! -Homer",
+    "My name is Cory. I like Sonic and I love eating gyros. -Armenian Cory",
+    "Catch me later, I'll buy you a beer. -Barney Calhoun",
+    "Get Mad!!! -Cave Johnson",
 ]
 
 var now = new Date();
