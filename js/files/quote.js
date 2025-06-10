@@ -11,6 +11,7 @@ var motr = [
     "My name is Cory. I like Sonic and I love eating gyros. -Armenian Cory",
     "Catch me later, I'll buy you a beer. -Barney Calhoun",
     "Get Mad!!! -Cave Johnson",
+    "Aesthetic Room Makeover. -@rubypaws_",
 ]
 
 var now = new Date();
