@@ -49,7 +49,7 @@ function createWindow(content) {
 
     var windowHeader = document.createElement('div');
     windowHeader.classList.add('windowHeader');
-    windowHeader.innerHTML = 'Window Header';
+    windowHeader.innerHTML = '';
 
     var windowContent = document.createElement('div');
     windowContent.classList.add('windowContent');
@@ -84,7 +84,7 @@ function createWindowIFrame(url) {
 
     var windowHeader = document.createElement('div');
     windowHeader.classList.add('windowHeader');
-    windowHeader.innerHTML = 'Window Header';
+    windowHeader.innerHTML = '';
 
     var newTab = document.createElement('button');
     newTab.classList.add('newTab');

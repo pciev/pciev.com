@@ -1,6 +1,6 @@
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('img/tokyoskytree.jpg');
+    background-image: url('img/assets/bg/wflow.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -46,7 +46,7 @@ html {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 700px;
-    z-index: 999;
+    z-index: -1;
 }
 
 #startMenu ul {
@@ -80,7 +80,7 @@ html {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: 300px;
-    z-index: 50;
+    z-index: 2;
 }
 
 .windowHeader {
@@ -126,6 +126,27 @@ html {
     right: 30px;
 }
 
+.desktopICO {
+    position: absolute;
+    top: 16px;
+    bottom: 0px;
+    left: 48px;
+    z-index: 1;
+}
+
+.desktopICO tr {
+    height: 100px;
+}
+
+.desktopICO td {
+    text-align: center;
+}
+
+.desktopICO img {
+    height: 48px;
+    width: 48px;
+}
+
 @media (max-width: 600px) {
     #startMenu {
         width: 100%;
@@ -134,7 +155,7 @@ html {
         top: 50px;
         left: 0;
         right: 0;
-        z-index: 999;
+        z-index: -1;
     }
 
     #startMenu ul li {
