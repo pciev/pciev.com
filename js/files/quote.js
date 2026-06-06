@@ -12,14 +12,21 @@ var motr = [
     "Catch me later, I'll buy you a beer. -Barney Calhoun",
     "Get Mad!!! -Cave Johnson",
     "Aesthetic Room Makeover. -@rubypaws_",
+    "Breadsticks, Muffins, or an empty jug of water. -Misheard flight attendant",
+    "You are no longer subscribed to Apple Music. -Apple Music",
+    "You will try a new type of seafood and love it. -Fortune cookie",
+    "made this out of frustration -@redinSTR"
 ]
 
 var now = new Date();
 var min = now.getMinutes();
-if (min < 55) {
+random();
+
+// Disable #FORZATHON LIVE timer until a better solution is found
+/* if (min < 55) {
     random()
-}
-setInterval(forzathonCheck, 1000);
+} 
+setInterval(forzathonCheck, 1000); */
 
 // Default function
 function random() {
